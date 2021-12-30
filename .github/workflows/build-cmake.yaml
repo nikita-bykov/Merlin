@@ -1,12 +1,7 @@
 name: Build and test CMake
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  schedule:
-    - cron: "30 8 * * *"
+  workflow_dispatch:
 
 # From https://github.com/actions/starter-workflows/pull/47
 jobs:
